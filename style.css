@@ -16,6 +16,7 @@ button{
     color: white;
     background-color: rgb(97, 97, 97);
     font-size: 28pt;
+    border: none;
 
 }
 
@@ -39,3 +40,4 @@ button{
 
 
 }
+
