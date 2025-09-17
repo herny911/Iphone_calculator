@@ -17,6 +17,7 @@ const negative = document.getElementById("negative");
 let a = 0
 let b = 0
 let c = ""
+const operators_signs = ["+","-","X","/","%"]
 
 //dichiaro funzioni di operazioni 
 
@@ -95,6 +96,7 @@ plus.addEventListener("click",function(){
     min.addEventListener("click",function(){
         a = Number(display.textContent);
         c = "-";
+        if(ghostDisplay.textContent.includes("-")){return} else
         ghostDisplay.textContent += display.textContent+c;
         display.textContent = ""; 
     })
@@ -102,6 +104,7 @@ plus.addEventListener("click",function(){
     div.addEventListener("click",()=>{
     a = Number(display.textContent);
     c = "/";
+    if(ghostDisplay.textContent.includes("/")){return} else
     ghostDisplay.textContent += display.textContent+c;
     display.textContent = "";
     })
@@ -109,6 +112,7 @@ plus.addEventListener("click",function(){
     mul.addEventListener("click",()=>{
         a=Number(display.textContent);
         c = "X";
+        if(ghostDisplay.textContent.includes("X")){return} else
         ghostDisplay.textContent += display.textContent+c;
         display.textContent = ""
     })
@@ -135,9 +139,10 @@ plus.addEventListener("click",function(){
 
     total.addEventListener("click",function(){   //Listener tasto uguale 
     b = Number(display.textContent);
-    if(display.textContent.)
+    if(display.textContent.includes(numbers.toString()&&
+    display.textContent.includes(operators_signs.toString()))){
     ghostDisplay.textContent += b 
-    
+    }    
      
  
     if(c === "+"){                                           //fatto  filtri if(operatore){
