@@ -19,6 +19,9 @@ body{
     height: 100px;
     margin-bottom: -30px;
 }
+.disable-double-tap{
+    touch-action:manipulation;
+}
 
 button{
     width: 80px;
